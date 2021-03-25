@@ -8,7 +8,8 @@
         :isLoading="isLoading"
         v-for="(card, index) in cards"
         :key="index"
-        :cardData="card"
+        :cardData="card.data"
+        :clickAction="card.clickAction"
       />
     </div>
   </div>
