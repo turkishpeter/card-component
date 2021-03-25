@@ -1,28 +1,62 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="toggleLoadingState" class="loading">
+      Test loading state
+    </button>
+    <div class="card-page">
+      <CardWrapper
+        :isLoading="isLoading"
+        v-for="(card, index) in cards"
+        :key="index"
+        :cardData="card"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import CardWrapper from "./components/CardWrapper.vue";
+import { cardsData } from "@/services/cardService.js";
 export default {
-  name: "App",
+  name: "CardPage",
   components: {
-    HelloWorld
+    CardWrapper
+  },
+  data() {
+    return {
+      cards: cardsData,
+      isLoading: false
+    };
+  },
+  methods: {
+    toggleLoadingState() {
+      this.isLoading = !this.isLoading;
+    }
   }
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style>
+.loading {
+  border-radius: 4px;
+  border: 1px solid rgba(45, 45, 45, 0.2);
+  padding: 12px;
+  background: white;
+  margin-bottom: 2rem;
+}
+.loading:focus,
+.loading:active,
+.loading:visited {
+  border: 1px solid rgba(45, 45, 45, 0.2);
+  outline: none;
+}
+.loading:hover {
+  box-shadow: 2px 2px 5px rgba(45, 45, 45, 0.2);
+}
+.card-page {
+  display: flex;
+}
+.card-page .card-container:not(:last-child) {
+  margin-right: 2rem;
 }
 </style>
