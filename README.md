@@ -1,5 +1,13 @@
 # card-component
 
+Flexible card component made easily configurable, with responsibility and accessibility in mind.
+
+## Configuration
+
+Use the ```cardService.js``` file to make changes to how the display of the cards.
+The file holds 4 data objects for 4 cards. The inner blocks(components) can be displayed/hidden by including/omitting the related part of the ```data``` property.
+The click action propery defines which action gets called on clicking the given card.
+
 ## Project setup
 ```
 npm install
@@ -14,11 +22,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
