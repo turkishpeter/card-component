@@ -23,3 +23,6 @@ npm run serve
 ```
 npm run build
 ```
+### Development time
+
+The project took about 4 hours of development time.
