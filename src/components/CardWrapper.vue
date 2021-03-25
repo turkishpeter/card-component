@@ -61,7 +61,7 @@ export default {
   display: flex;
   min-width: 300px;
   flex-direction: column;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   border: 1px solid rgba(45, 45, 45, 0.2);
   width: min-content;
   cursor: pointer;

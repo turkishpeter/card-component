@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .container {
   display: flex;
-  padding: 24px;
+  padding: 1.5rem;
 }
 .thumbnail {
   width: 60px;

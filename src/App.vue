@@ -39,9 +39,9 @@ export default {
 
 <style>
 .loading {
-  border-radius: 4px;
+  border-radius: 0.25rem;
   border: 1px solid rgba(45, 45, 45, 0.2);
-  padding: 12px;
+  padding: 0.75rem;
   background: white;
   margin-bottom: 2rem;
 }
