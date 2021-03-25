@@ -60,4 +60,21 @@ export default {
 .card-page .card-container:not(:last-child) {
   margin-right: 2rem;
 }
+@media screen and (max-width: 1048px) {
+  .card-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-container {
+    margin-bottom: 2rem;
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-page .card-container:not(:last-child) {
+    margin-right: 0;
+  }
+}
 </style>

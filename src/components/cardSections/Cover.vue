@@ -34,3 +34,10 @@ export default {
   }
 };
 </script>
+<style>
+@media screen and (max-width: 1500px) {
+  .cover-image {
+    max-width: 300px !important;
+  }
+}
+</style>
