@@ -4,7 +4,8 @@ Flexible card component made easily configurable, with responsibility and access
 
 ## Configuration
 
-Use the ```cardService.js``` file to make changes to how the display of the cards.
+Use the ```cardService.js``` file to make changes to how the cards are displayed.
+Changes to the configuration file reflect the order of the cards, and the order of inner blocks (components).
 The file holds 4 data objects for 4 cards. The inner blocks(components) can be displayed/hidden by including/omitting the related part of the ```data``` property.
 The click action propery defines which action gets called on clicking the given card.
 
